@@ -14,9 +14,9 @@ Pasos del ejercicio
 
         Cada alumno deberá crear al menos dos issues en el repositorio para:
 
-            1- Una nueva feature (ejemplo: "Agregar archivo README personal").
+            1- Una nueva feature: Un archivo dentro de la carpeta creada en el que aparezca una palabra mal escrita.
 
-            2- "Solución" de un bug en un feature de un compañero (ejemplo: "Corregir formato de la lista de participantes").
+            2- "Solución" de un bug en un feature de un compañero: Corregir la palabra mal escrita.
 
         En el issue, detalla claramente qué hay que hacer y por qué.
 
@@ -80,3 +80,25 @@ Recomendaciones
     - Asegurarse de que la rama sea pequeña y enfocada en resolver únicamente el issue asociado.
 
     - Practicar pull requests con descripciones claras, explicando qué se cambió y por qué.
+
+Flujo de trabajo:
+
+    Revision pull request del feature:
+        - Umama a Viktor
+        - Viktor a Aitziber
+        - Aitziber a Izani
+        - Izani a Balda
+        - Balda a Umama
+    
+    Correcion de bug:
+        - Umama a Viktor
+        - Viktor a Aitziber
+        - Aitziber a Izani
+        - Izani a Balda
+        - Balda a Umama
+
+    Revision pull request del bugfix:
+
+        Cada uno hara la revision del bugfix de su feature.
+
+        Ejemplo: Izani revisa el pull request del bugfix que ha hecho Aitziber a su feature.
