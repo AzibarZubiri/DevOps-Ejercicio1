@@ -1,0 +1,87 @@
+En este ejercicio el objetivo es simular un entorno de trabajo real en un proyecto de software, donde las tareas
+(nuevas funcionalidades y correcciones de errores) se gestionan mediante issues,
+y cada cambio se integra en la rama principal a través de ramas de características (feature branches)
+siguiendo la estrategia GitHub Flow.
+Pasos del ejercicio
+
+    1- Revisar el repositorio principal
+
+        Clona nuevamente el repositorio o actualiza tu copia existente de la rama main:
+
+            bash
+            git pull origin main
+
+    2- Creación de Issues en GitHub
+
+        Cada alumno deberá crear al menos un issue en el repositorio para:
+
+            Una nueva feature (ejemplo: "Agregar archivo README personal").
+
+            O la solución de un bug (ejemplo: "Corregir formato de la lista de participantes").
+
+        En el issue, detalla claramente qué hay que hacer y por qué.
+
+    3- Asociar Issue a una Rama
+
+        Desde el issue, crear una nueva rama utilizando la convención:
+
+            text
+            feature/<nombre-descriptivo>
+            bugfix/<nombre-descriptivo>
+
+        Ejemplo:
+
+            bash
+            git checkout -b feature/README-juan
+
+    4- Desarrollar en la Rama
+
+        Realiza los cambios correspondientes al issue.
+
+        Haz commits descriptivos, referenciando el número de issue:
+
+            bash
+            git commit -m "Agrego README personal (#12)"
+
+    5- Subir Cambios y Crear Pull Request
+
+        Sube tu rama al repositorio:
+
+            bash
+            git push origin feature/README-juan
+
+            Desde GitHub, abre un Pull Request hacia main, vinculándolo con el issue creado previamente.
+
+            De esta manera, al hacer merge, el issue se cierra automáticamente.
+
+    6- Revisión de Código entre Compañeros
+
+        Cada alumno debe revisar al menos un Pull Request de un compañero.
+
+        Deja comentarios constructivos y, si todo está correcto, aprueba el PR.
+
+    7- Integración en Main
+
+        Una vez aprobado, el PR se mergea en main.
+
+        GitHub cierra automáticamente el issue asociado cuando se usa la referencia Fixes #<número> en el PR o en el commit.
+
+Objetivos del Ejercicio
+
+    - Aprender a utilizar GitHub Flow de forma disciplinada: main siempre estable, las ramas sirven para cambios puntuales.
+
+    - Gestionar el trabajo a través de issues, asociándolos con ramas y PRs.
+
+    - Practicar la creación de ramas de feature y bugfix con convenciones de nombres claras.
+
+    - Fomentar la revisión de código entre compañeros (code review).
+
+    - Consolidar la práctica de commits atómicos y descriptivos.
+
+Recomendaciones
+
+    - Siempre hacer pull origin(o el nombre que le hayamos dado) main antes de empezar una rama nueva.
+
+    - Asegurarse de que la rama sea pequeña y enfocada en resolver únicamente el issue asociado.
+
+    - Practicar pull requests con descripciones claras, explicando qué se cambió y por qué.
