@@ -8,16 +8,15 @@ Pasos del ejercicio
 
         Clona nuevamente el repositorio o actualiza tu copia existente de la rama main:
 
-            bash
             git pull origin main
 
     2- Creación de Issues en GitHub
 
-        Cada alumno deberá crear al menos un issue en el repositorio para:
+        Cada alumno deberá crear al menos dos issues en el repositorio para:
 
-            Una nueva feature (ejemplo: "Agregar archivo README personal").
+            1- Una nueva feature (ejemplo: "Agregar archivo README personal").
 
-            O la solución de un bug (ejemplo: "Corregir formato de la lista de participantes").
+            2- "Solución" de un bug en un feature de un compañero (ejemplo: "Corregir formato de la lista de participantes").
 
         En el issue, detalla claramente qué hay que hacer y por qué.
 
@@ -25,13 +24,11 @@ Pasos del ejercicio
 
         Desde el issue, crear una nueva rama utilizando la convención:
 
-            text
             feature/<nombre-descriptivo>
             bugfix/<nombre-descriptivo>
 
         Ejemplo:
 
-            bash
             git checkout -b feature/README-juan
 
     4- Desarrollar en la Rama
@@ -40,14 +37,12 @@ Pasos del ejercicio
 
         Haz commits descriptivos, referenciando el número de issue:
 
-            bash
             git commit -m "Agrego README personal (#12)"
 
     5- Subir Cambios y Crear Pull Request
 
         Sube tu rama al repositorio:
 
-            bash
             git push origin feature/README-juan
 
             Desde GitHub, abre un Pull Request hacia main, vinculándolo con el issue creado previamente.
